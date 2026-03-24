@@ -1,6 +1,7 @@
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import playArea from '@/assets/play-area.jpg';
 import { Clock, IndianRupee, Footprints } from 'lucide-react';
+import PlayAreaBookingForm from './PlayAreaBookingForm';
 
 export default function PlayAreaSection() {
   const ref = useScrollReveal();
