@@ -1,6 +1,7 @@
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import playArea from '@/assets/play-area.jpg';
 import { Clock, IndianRupee, Footprints } from 'lucide-react';
+import PlayAreaBookingForm from './PlayAreaBookingForm';
 
 export default function PlayAreaSection() {
   const ref = useScrollReveal();
@@ -49,6 +50,10 @@ export default function PlayAreaSection() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="mt-12 max-w-2xl mx-auto">
+          <PlayAreaBookingForm />
         </div>
       </div>
     </section>
