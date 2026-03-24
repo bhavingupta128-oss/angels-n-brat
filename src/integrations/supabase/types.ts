@@ -38,6 +38,51 @@ export type Database = {
         }
         Relationships: []
       }
+      play_area_bookings: {
+        Row: {
+          booking_date: string
+          booking_time: string
+          created_at: string
+          duration_hours: number
+          email: string | null
+          id: string
+          kid_ages: string | null
+          name: string
+          notes: string | null
+          num_kids: number
+          phone: string
+          status: string
+        }
+        Insert: {
+          booking_date: string
+          booking_time: string
+          created_at?: string
+          duration_hours?: number
+          email?: string | null
+          id?: string
+          kid_ages?: string | null
+          name: string
+          notes?: string | null
+          num_kids?: number
+          phone: string
+          status?: string
+        }
+        Update: {
+          booking_date?: string
+          booking_time?: string
+          created_at?: string
+          duration_hours?: number
+          email?: string | null
+          id?: string
+          kid_ages?: string | null
+          name?: string
+          notes?: string | null
+          num_kids?: number
+          phone?: string
+          status?: string
+        }
+        Relationships: []
+      }
       reservations: {
         Row: {
           created_at: string
