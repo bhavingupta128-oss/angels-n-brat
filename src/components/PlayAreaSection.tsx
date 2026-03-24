@@ -51,6 +51,10 @@ export default function PlayAreaSection() {
             </div>
           </div>
         </div>
+
+        <div className="mt-12 max-w-2xl mx-auto">
+          <PlayAreaBookingForm />
+        </div>
       </div>
     </section>
   );
