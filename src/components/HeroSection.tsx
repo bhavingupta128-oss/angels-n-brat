@@ -51,6 +51,14 @@ export default function HeroSection() {
             >
               Reserve a Table
             </a>
+            <a
+              href="http://zoma.to/r/20204934"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[hsl(0,85%,45%)] text-white px-7 py-3.5 rounded-lg font-body font-semibold text-sm hover:opacity-90 active:scale-[0.97] transition-all duration-150 shadow-lg"
+            >
+              🛵 Order on Zomato
+            </a>
           </div>
 
           <div
