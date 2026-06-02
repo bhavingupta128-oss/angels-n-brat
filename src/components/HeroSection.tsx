@@ -72,6 +72,14 @@ export default function HeroSection() {
             >
               🛵 Order on Zomato
             </a>
+            <a
+              href="https://www.instagram.com/angelsnbratscafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] text-white px-7 py-3.5 rounded-lg font-body font-semibold text-sm hover:opacity-90 active:scale-[0.97] transition-all duration-150 shadow-lg"
+            >
+              📸 Follow on Instagram
+            </a>
           </div>
 
           <div
