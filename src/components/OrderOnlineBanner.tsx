@@ -11,7 +11,7 @@ export default function OrderOnlineBanner() {
           Craving Our Food? Order Now!
         </h2>
         <p className="font-body text-sm text-muted-foreground mb-8 max-w-md mx-auto">
-          Get your favourite dishes delivered to your doorstep via Zomato or Swiggy.
+          Get your favourite dishes delivered to your doorstep via Zomato.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
@@ -22,15 +22,6 @@ export default function OrderOnlineBanner() {
             className="inline-flex items-center gap-2 bg-[hsl(0,85%,45%)] text-white px-8 py-3.5 rounded-xl font-body font-semibold text-sm hover:opacity-90 active:scale-[0.97] transition-all duration-150 shadow-lg"
           >
             🍽️ Order on Zomato
-            <ExternalLink className="w-4 h-4" />
-          </a>
-          <a
-            href="http://zoma.to/r/20204934"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[hsl(25,95%,50%)] text-white px-8 py-3.5 rounded-xl font-body font-semibold text-sm hover:opacity-90 active:scale-[0.97] transition-all duration-150 shadow-lg"
-          >
-            🛵 Order on Swiggy
             <ExternalLink className="w-4 h-4" />
           </a>
         </div>
