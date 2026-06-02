@@ -1,15 +1,28 @@
-import heroCafe from '@/assets/hero-cafe.jpg';
+import { useEffect, useState } from 'react';
+import cafe1 from '@/assets/cafe-1.png.asset.json';
+import cafe2 from '@/assets/cafe-2.png.asset.json';
+import cafe3 from '@/assets/cafe-3.png.asset.json';
+
+const heroImages = [cafe1.url, cafe2.url, cafe3.url];
 
 export default function HeroSection() {
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setIndex((i) => (i + 1) % heroImages.length), 5000);
+    return () => clearInterval(id);
+  }, []);
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center pt-16">
       <div className="absolute inset-0">
-        <img
-          src={heroCafe}
-          alt="Angels n Brats Café interior with play area"
-          className="w-full h-full object-cover"
-          loading="eager"
-        />
+        {heroImages.map((src, i) => (
+          <img
+            key={src}
+            src={src}
+            alt="Angels n Brats Café"
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === index ? 'opacity-100' : 'opacity-0'}`}
+            loading={i === 0 ? 'eager' : 'lazy'}
+          />
+        ))}
         <div className="absolute inset-0 bg-warm-brown/60" />
       </div>
 

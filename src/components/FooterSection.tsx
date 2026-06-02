@@ -1,4 +1,4 @@
-import { Heart } from 'lucide-react';
+import { Heart, Instagram } from 'lucide-react';
 
 export default function FooterSection() {
   return (
@@ -31,7 +31,16 @@ export default function FooterSection() {
             <h4 className="font-body text-sm font-semibold uppercase tracking-wider mb-3">Contact</h4>
             <p className="font-body text-sm text-sand/70 mb-2">093210 85516</p>
             <p className="font-body text-sm text-sand/70 mb-2">Open 12 PM – 10 PM</p>
-            <p className="font-body text-sm text-sand/70">Sector 50, Gurugram</p>
+            <p className="font-body text-sm text-sand/70 mb-3">Sector 50, Gurugram</p>
+            <a
+              href="https://www.instagram.com/angelsnbratscafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-body text-sm text-sand/80 hover:text-terracotta-light transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
+              @angelsnbratscafe
+            </a>
           </div>
         </div>
         <div className="border-t border-sand/15 pt-6 flex items-center justify-center gap-1">
