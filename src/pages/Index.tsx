@@ -3,7 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import MenuSection from '@/components/MenuSection';
 import OrderOnlineBanner from '@/components/OrderOnlineBanner';
-import PlayAreaSection from '@/components/PlayAreaSection';
+import ReviewsSection from '@/components/ReviewsSection';
 import ReservationSection from '@/components/ReservationSection';
 import ContactSection from '@/components/ContactSection';
 import FooterSection from '@/components/FooterSection';
@@ -16,7 +16,7 @@ export default function Index() {
       <AboutSection />
       <MenuSection />
       <OrderOnlineBanner />
-      <PlayAreaSection />
+      <ReviewsSection />
       <ReservationSection />
       <ContactSection />
       <FooterSection />

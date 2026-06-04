@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import cafe1 from '@/assets/cafe-1.png.asset.json';
-import cafe2 from '@/assets/cafe-2.png.asset.json';
-import cafe3 from '@/assets/cafe-3.png.asset.json';
+import storefront from '@/assets/nowhere-storefront.png.asset.json';
+import terrace from '@/assets/nowhere-terrace.png.asset.json';
+import liveMusic from '@/assets/nowhere-livemusic.png.asset.json';
+import barrels from '@/assets/nowhere-barrels.png.asset.json';
 
-const heroImages = [cafe1.url, cafe2.url, cafe3.url];
+const heroImages = [terrace.url, storefront.url, liveMusic.url, barrels.url];
 
 export default function HeroSection() {
   const [index, setIndex] = useState(0);
@@ -23,30 +24,30 @@ export default function HeroSection() {
             loading={i === 0 ? 'eager' : 'lazy'}
           />
         ))}
-        <div className="absolute inset-0 bg-warm-brown/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-wood-dark/80 via-wood-dark/65 to-wood-dark/90" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
         <div className="max-w-2xl">
           <p
-            className="font-body text-sm font-semibold uppercase tracking-[0.2em] text-sand mb-6 opacity-0 animate-fade-up"
+            className="font-body text-sm font-semibold uppercase tracking-[0.3em] text-amber-light mb-6 opacity-0 animate-fade-up"
             style={{ animationDelay: '100ms' }}
           >
-            Family Café & Play Zone • Gurugram
+            Terrace · BrewPub · Cafe — DLF Phase 4, Gurugram
           </p>
           <h1
-            className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-sand leading-[1.05] mb-6 opacity-0 animate-fade-up"
+            className="font-display text-6xl sm:text-7xl lg:text-8xl text-sand leading-[0.95] mb-6 opacity-0 animate-fade-up uppercase"
             style={{ animationDelay: '250ms' }}
           >
-            Where Food Meets<br />
-            <span className="text-terracotta-light">Family Fun</span>
+            Live in the<br />
+            middle of <span className="text-amber">nowhere</span>
           </h1>
           <p
             className="font-body text-lg text-sand/85 max-w-lg mb-8 leading-relaxed opacity-0 animate-fade-up"
             style={{ animationDelay: '400ms' }}
           >
-            Great comfort food, a vibrant kids' play area, and the warmest
-            hospitality — all under one roof at Good Earth City Centre.
+            Craft brews on tap, wood-fired pizzas, live music nights and a buzzing
+            open terrace — the favourite hangout in DLF Cross Point.
           </p>
           <div
             className="flex flex-wrap gap-4 opacity-0 animate-fade-up"
@@ -56,7 +57,7 @@ export default function HeroSection() {
               href="#menu"
               className="bg-primary text-primary-foreground px-7 py-3.5 rounded-lg font-body font-semibold text-sm hover:opacity-90 active:scale-[0.97] transition-all duration-150 shadow-lg shadow-primary/20"
             >
-              Explore Menu
+              View the Menu
             </a>
             <a
               href="#reserve"
@@ -87,9 +88,9 @@ export default function HeroSection() {
             style={{ animationDelay: '700ms' }}
           >
             {[
-              { label: 'Open Daily', value: '12 – 10 PM' },
-              { label: 'Play Area', value: 'Till 9 PM' },
-              { label: 'Play Charges', value: '₹399/hr' },
+              { label: 'Google', value: '★ 4.2 / 2.6k+' },
+              { label: 'Zomato', value: '★ 4.3 / 5.6k+' },
+              { label: 'Hours', value: '12 PM – 1 AM' },
             ].map((s) => (
               <div key={s.label}>
                 <p className="font-body text-xs uppercase tracking-wider text-sand/60 mb-1">{s.label}</p>
