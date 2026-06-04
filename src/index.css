@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,42 +6,44 @@
 
 @layer base {
   :root {
-    --background: 36 33% 97%;
-    --foreground: 24 10% 18%;
-    --card: 36 30% 95%;
-    --card-foreground: 24 10% 18%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 24 10% 18%;
-    --primary: 16 65% 50%;
-    --primary-foreground: 36 33% 97%;
-    --secondary: 36 30% 90%;
-    --secondary-foreground: 24 10% 18%;
-    --muted: 36 20% 92%;
-    --muted-foreground: 24 8% 48%;
-    --accent: 85 35% 42%;
-    --accent-foreground: 36 33% 97%;
+    /* Brewpub palette — dark wood, warm amber, cream */
+    --background: 30 18% 10%;
+    --foreground: 38 35% 92%;
+    --card: 28 20% 14%;
+    --card-foreground: 38 35% 92%;
+    --popover: 28 22% 13%;
+    --popover-foreground: 38 35% 92%;
+    --primary: 36 80% 52%;
+    --primary-foreground: 28 30% 10%;
+    --secondary: 28 18% 20%;
+    --secondary-foreground: 38 30% 88%;
+    --muted: 28 14% 18%;
+    --muted-foreground: 36 12% 65%;
+    --accent: 30 65% 45%;
+    --accent-foreground: 38 35% 95%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 30 20% 86%;
-    --input: 30 20% 86%;
-    --ring: 16 65% 50%;
+    --border: 28 14% 22%;
+    --input: 28 14% 22%;
+    --ring: 36 80% 52%;
     --radius: 0.75rem;
-    --sidebar-background: 36 30% 95%;
-    --sidebar-foreground: 24 10% 18%;
-    --sidebar-primary: 16 65% 50%;
-    --sidebar-primary-foreground: 36 33% 97%;
-    --sidebar-accent: 36 20% 92%;
-    --sidebar-accent-foreground: 24 10% 18%;
-    --sidebar-border: 30 20% 86%;
-    --sidebar-ring: 16 65% 50%;
+    --sidebar-background: 28 20% 14%;
+    --sidebar-foreground: 38 35% 92%;
+    --sidebar-primary: 36 80% 52%;
+    --sidebar-primary-foreground: 28 30% 10%;
+    --sidebar-accent: 28 14% 18%;
+    --sidebar-accent-foreground: 38 35% 92%;
+    --sidebar-border: 28 14% 22%;
+    --sidebar-ring: 36 80% 52%;
 
-    --warm-cream: 40 40% 96%;
-    --terracotta: 16 65% 50%;
-    --terracotta-light: 16 55% 62%;
-    --olive: 85 35% 42%;
-    --olive-light: 85 30% 55%;
-    --warm-brown: 24 30% 30%;
-    --sand: 36 35% 88%;
+    /* Brewpub semantic tokens */
+    --warm-cream: 38 35% 92%;
+    --amber: 36 80% 52%;
+    --amber-light: 38 85% 65%;
+    --copper: 24 55% 42%;
+    --copper-light: 24 50% 55%;
+    --wood-dark: 24 25% 14%;
+    --sand: 38 30% 80%;
 
     font-family: 'DM Sans', system-ui, sans-serif;
   }
@@ -55,7 +57,8 @@
     @apply bg-background text-foreground antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bebas Neue', 'Playfair Display', serif;
+    letter-spacing: 0.01em;
   }
 }
 

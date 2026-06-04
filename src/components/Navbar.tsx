@@ -6,7 +6,7 @@ const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Menu', href: '#menu' },
-  { label: 'Play Area', href: '#play-area' },
+  { label: 'Reviews', href: '#reviews' },
   { label: 'Reserve', href: '#reserve' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -34,7 +34,7 @@ export default function Navbar() {
         </div>
 
         <a
-          href="tel:09321085516"
+          href="tel:09205050770"
           className="hidden md:flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 active:scale-[0.97] transition-all duration-150"
         >
           <Phone className="w-4 h-4" />
@@ -63,7 +63,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="tel:09321085516"
+            href="tel:09205050770"
             className="flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold w-fit"
           >
             <Phone className="w-4 h-4" />
