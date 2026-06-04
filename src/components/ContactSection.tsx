@@ -65,8 +65,8 @@ export default function ContactSection() {
                   </svg>
                 ),
                 title: 'Instagram',
-                text: '@angelsnbratscafe',
-                href: 'https://www.instagram.com/angelsnbratscafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+                text: '@nowherebrewpub.ggn',
+                href: 'https://www.instagram.com/nowherebrewpub.ggn/',
               },
             ].map((item) => (
               <div
@@ -102,7 +102,7 @@ export default function ContactSection() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Angels n Brats Café Location"
+                title="Nowhere Terrace BrewPub Cafe Location"
               />
             </div>
           </div>

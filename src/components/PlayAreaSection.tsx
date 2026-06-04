@@ -13,7 +13,7 @@ export default function PlayAreaSection() {
           <div className="order-2 lg:order-1">
             <img
               src={playArea}
-              alt="Kids playing in the Angels n Brats play area"
+              alt="Kids playing in the Nowhere Terrace BrewPub Cafe play area"
               className="rounded-2xl shadow-2xl shadow-warm-brown/10 w-full object-cover aspect-[16/10]"
               loading="lazy"
             />

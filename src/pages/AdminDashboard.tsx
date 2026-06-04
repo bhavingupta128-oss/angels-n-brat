@@ -71,7 +71,7 @@ export default function AdminDashboard() {
       <header className="bg-card border-b border-border px-4 sm:px-6 py-4 flex items-center justify-between">
         <div>
           <h1 className="font-display text-xl font-bold text-foreground">Admin Dashboard</h1>
-          <p className="font-body text-xs text-muted-foreground">Angels n Brats Café</p>
+          <p className="font-body text-xs text-muted-foreground">Nowhere Terrace BrewPub Cafe</p>
         </div>
         <div className="flex items-center gap-2">
           <button onClick={fetchData} className="p-2 rounded-lg hover:bg-muted transition" title="Refresh">

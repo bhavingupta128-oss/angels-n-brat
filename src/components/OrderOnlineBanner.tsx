@@ -16,7 +16,7 @@ export default function OrderOnlineBanner() {
 
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            href="http://zoma.to/r/20204934"
+            href="https://www.zomato.com/ncr/nowhere-terrace-brewpub-cafe-dlf-phase-4"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[hsl(0,85%,45%)] text-white px-8 py-3.5 rounded-xl font-body font-semibold text-sm hover:opacity-90 active:scale-[0.97] transition-all duration-150 shadow-lg"
