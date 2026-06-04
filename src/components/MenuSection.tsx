@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { menuData } from '@/lib/menuData';
 
