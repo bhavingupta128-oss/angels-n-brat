@@ -24,7 +24,7 @@ export default function AboutSection() {
               More Than a Café — It's a Family Destination
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed mb-8 max-w-lg">
-              Located in the heart of Good Earth City Centre, Angels n Brats Café is where great food meets
+              Located in the heart of Good Earth City Centre, Nowhere Terrace BrewPub Cafe is where great food meets
               a fun, relaxing environment. Our dedicated kids' play area means parents can enjoy their
               meals while children have a great time in a safe, engaging space.
             </p>
@@ -46,7 +46,7 @@ export default function AboutSection() {
           <div className="relative">
             <img
               src={foodSpread}
-              alt="Delicious food spread at Angels n Brats"
+              alt="Delicious food spread at Nowhere Terrace BrewPub Cafe"
               className="rounded-2xl shadow-2xl shadow-warm-brown/10 w-full object-cover aspect-[4/3]"
               loading="lazy"
             />

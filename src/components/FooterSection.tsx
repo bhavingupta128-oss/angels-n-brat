@@ -1,4 +1,5 @@
 import { Heart, Instagram } from 'lucide-react';
+import logo from '@/assets/nowhere-logo.png.asset.json';
 
 export default function FooterSection() {
   return (
@@ -6,11 +7,9 @@ export default function FooterSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid sm:grid-cols-3 gap-8 mb-10">
           <div>
-            <h3 className="font-display text-xl font-bold mb-3">
-              Angels <span className="text-terracotta-light">n</span> Brats
-            </h3>
+            <img src={logo.url} alt="Nowhere Terrace BrewPub Cafe" className="h-10 w-auto mb-3" />
             <p className="font-body text-sm text-sand/70 leading-relaxed">
-              Family café & play zone at Good Earth City Centre, Gurugram.
+              Terrace brewpub & café in DLF Phase 4, Gurugram.
             </p>
           </div>
           <div>

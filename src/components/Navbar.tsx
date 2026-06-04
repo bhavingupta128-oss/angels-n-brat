@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
+import logo from '@/assets/nowhere-logo.png.asset.json';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -16,8 +17,8 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <a href="#home" className="font-display text-xl font-bold text-foreground tracking-tight">
-          Angels <span className="text-primary">n</span> Brats
+        <a href="#home" className="flex items-center">
+          <img src={logo.url} alt="Nowhere Terrace BrewPub Cafe" className="h-9 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">

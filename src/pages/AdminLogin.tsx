@@ -36,7 +36,7 @@ export default function AdminLogin() {
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           <h1 className="font-display text-2xl font-bold text-foreground">Admin Access</h1>
-          <p className="font-body text-sm text-muted-foreground mt-1">Angels n Brats Café</p>
+          <p className="font-body text-sm text-muted-foreground mt-1">Nowhere Terrace BrewPub Cafe</p>
         </div>
         <form onSubmit={handleSubmit} className="bg-card rounded-2xl border border-border p-6 space-y-4 shadow-sm">
           <input

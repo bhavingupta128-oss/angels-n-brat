@@ -18,7 +18,7 @@ export default function HeroSection() {
           <img
             key={src}
             src={src}
-            alt="Angels n Brats Café"
+            alt="Nowhere Terrace BrewPub Cafe"
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === index ? 'opacity-100' : 'opacity-0'}`}
             loading={i === 0 ? 'eager' : 'lazy'}
           />
@@ -65,7 +65,7 @@ export default function HeroSection() {
               Reserve a Table
             </a>
             <a
-              href="http://zoma.to/r/20204934"
+              href="https://www.zomato.com/ncr/nowhere-terrace-brewpub-cafe-dlf-phase-4"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[hsl(0,85%,45%)] text-white px-7 py-3.5 rounded-lg font-body font-semibold text-sm hover:opacity-90 active:scale-[0.97] transition-all duration-150 shadow-lg"
@@ -73,7 +73,7 @@ export default function HeroSection() {
               🛵 Order on Zomato
             </a>
             <a
-              href="https://www.instagram.com/angelsnbratscafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              href="https://www.instagram.com/nowherebrewpub.ggn/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] text-white px-7 py-3.5 rounded-lg font-body font-semibold text-sm hover:opacity-90 active:scale-[0.97] transition-all duration-150 shadow-lg"
