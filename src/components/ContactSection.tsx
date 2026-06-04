@@ -54,10 +54,10 @@ export default function ContactSection() {
               {
                 icon: MapPin,
                 title: 'Location',
-                text: 'Shop No. 227, 2nd Floor, Good Earth City Centre, Nirvana Country, Sector 50, Gurugram, Haryana',
+                text: '2nd Floor, Crosspoint Mall, opposite Hamilton Court Road, Galleria Market, Sector 28, DLF Phase IV, Gurugram, Haryana 122009',
               },
-              { icon: Phone, title: 'Phone', text: '093210 85516' },
-              { icon: Clock, title: 'Hours', text: '12:00 PM – 10:00 PM (Play Area till 9 PM)' },
+              { icon: Phone, title: 'Phone', text: '092050 50770', href: 'tel:09205050770' },
+              { icon: Clock, title: 'Hours', text: '12:00 PM – 1:00 AM, daily' },
               {
                 icon: () => (
                   <svg className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@ export default function ContactSection() {
             {/* Google Maps embed */}
             <div className="rounded-xl overflow-hidden border border-border shadow-sm aspect-video">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.0!2d77.04!3d28.41!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI0JzM2LjAiTiA3N8KwMDInMjQuMCJF!5e0!3m2!1sen!2sin!4v1"
+                src="https://www.google.com/maps?q=Nowhere+Terrace+BrewPub+Cafe+DLF+Phase+4+Gurugram&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

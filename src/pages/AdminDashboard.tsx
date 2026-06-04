@@ -2,15 +2,14 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
-import { LogOut, CalendarDays, Baby, MessageSquare, RefreshCw } from 'lucide-react';
+import { LogOut, CalendarDays, MessageSquare, RefreshCw } from 'lucide-react';
 
-type Tab = 'reservations' | 'play-area' | 'messages';
+type Tab = 'reservations' | 'messages';
 
 export default function AdminDashboard() {
   const navigate = useNavigate();
   const [tab, setTab] = useState<Tab>('reservations');
   const [reservations, setReservations] = useState<any[]>([]);
-  const [playBookings, setPlayBookings] = useState<any[]>([]);
   const [messages, setMessages] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -22,13 +21,11 @@ export default function AdminDashboard() {
 
   const fetchData = async () => {
     setLoading(true);
-    const [r, p, m] = await Promise.all([
+    const [r, m] = await Promise.all([
       supabase.from('reservations').select('*').order('created_at', { ascending: false }).limit(100),
-      supabase.from('play_area_bookings').select('*').order('created_at', { ascending: false }).limit(100),
       supabase.from('contact_messages').select('*').order('created_at', { ascending: false }).limit(100),
     ]);
     setReservations(r.data || []);
-    setPlayBookings(p.data || []);
     setMessages(m.data || []);
     setLoading(false);
   };
@@ -40,7 +37,7 @@ export default function AdminDashboard() {
     navigate('/admin/login');
   };
 
-  const updateStatus = async (table: 'reservations' | 'play_area_bookings', id: string, status: string) => {
+  const updateStatus = async (table: 'reservations', id: string, status: string) => {
     const { error } = await supabase.from(table).update({ status }).eq('id', id);
     if (error) { toast.error('Update failed'); return; }
     toast.success('Status updated');
@@ -62,7 +59,6 @@ export default function AdminDashboard() {
 
   const tabs: { key: Tab; label: string; icon: typeof CalendarDays; count: number }[] = [
     { key: 'reservations', label: 'Table Reservations', icon: CalendarDays, count: reservations.length },
-    { key: 'play-area', label: 'Play Area Bookings', icon: Baby, count: playBookings.length },
     { key: 'messages', label: 'Messages', icon: MessageSquare, count: messages.length },
   ];
 
@@ -130,36 +126,6 @@ export default function AdminDashboard() {
                       )}
                       {r.status !== 'cancelled' && (
                         <button onClick={() => updateStatus('reservations', r.id, 'cancelled')} className="px-3 py-1.5 rounded-lg bg-red-100 text-red-800 font-body text-xs font-medium hover:bg-red-200 transition">Cancel</button>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {tab === 'play-area' && (
-              <div className="space-y-3">
-                {playBookings.length === 0 ? (
-                  <p className="text-center py-12 font-body text-muted-foreground">No play area bookings yet</p>
-                ) : playBookings.map((b) => (
-                  <div key={b.id} className="bg-card border border-border rounded-xl p-4 flex flex-col sm:flex-row sm:items-center gap-3">
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 mb-1">
-                        <p className="font-body text-sm font-semibold text-foreground">{b.name}</p>
-                        {statusBadge(b.status)}
-                      </div>
-                      <p className="font-body text-xs text-muted-foreground">
-                        📅 {b.booking_date} at {b.booking_time} · ⏱️ {b.duration_hours}h · 👶 {b.num_kids} kid{b.num_kids > 1 ? 's' : ''} · 📞 {b.phone}
-                        {b.kid_ages && ` · Ages: ${b.kid_ages}`}
-                      </p>
-                      {b.notes && <p className="font-body text-xs text-muted-foreground mt-1">💬 {b.notes}</p>}
-                    </div>
-                    <div className="flex gap-1.5 flex-shrink-0">
-                      {b.status !== 'confirmed' && (
-                        <button onClick={() => updateStatus('play_area_bookings', b.id, 'confirmed')} className="px-3 py-1.5 rounded-lg bg-green-100 text-green-800 font-body text-xs font-medium hover:bg-green-200 transition">Confirm</button>
-                      )}
-                      {b.status !== 'cancelled' && (
-                        <button onClick={() => updateStatus('play_area_bookings', b.id, 'cancelled')} className="px-3 py-1.5 rounded-lg bg-red-100 text-red-800 font-body text-xs font-medium hover:bg-red-200 transition">Cancel</button>
                       )}
                     </div>
                   </div>
